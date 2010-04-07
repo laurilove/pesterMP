@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<title>Tweet the UK Parliament</title>
+<link rel="stylesheet" href="/static/pester.css">
+
+<h1>Tweet MPs</h1>
+
+<strong>Authenticated as %UNAME%</strong>
+
+<h2>Get vocal on democracy!</h2>
+
+<p>Ever wanted to send a <a href="http://twitter.com/">Twitter</a> message to every Member of the <a href="http://en.wikipedia.org/wiki/Parliament_of_the_United_Kingdom">UK Parliament</a> who has a Twitter account? Well now you can.
+
+<p>Now that you've logged in with OAuth, you can use the form below to send your message to all tweeting UK MPs. Be aware that all tweets will appear in your public timeline. Please be considerate, and avoid polluting hash tags.
+
+<form method="POST" action="post.py">
+%AUTH%
+<p><strong>Dear MPs</strong>: <input type="text" name="text" size="64" maxlength="125"> 
+<input type="submit" value="Send!">
+</form>
+
+<p>Note: we have tried to set a reasonable rate limit so as to avoid using up your allocated status-update quota, but if you have been busily tweeting you may not be able to update for a while as the sender executes. 
+
+<p>App by <a href="http://twitter.com/laurilove">@laurilove</a>
